@@ -23,25 +23,25 @@ public class UI extends PApplet
 		}
 	}
 
-	// public void printColours()
-	// {
-	// 	for(Colour colour : colours)
-	// 	{
-	// 		System.out.println(colour);
-	// 	}
-	// }
+	public void printColours()
+	{
+		for(Colour colour : colours)
+		{
+			System.out.println(colour);
+		}
+	}
 
-	// public Colour findColour(int value)
-	// {
-	// 	for (Colour colour : colours)
-	// 	{
-	// 		if(value == colour.getValue())
-	// 		{
-	// 			return colour;
-	// 		}
-	// 	}
-	// 	return null;
-	// }
+	public Colour findColour(int value)
+	{
+		for (Colour colour : colours)
+		{
+			if(value == colour.getValue())
+			{
+				return colour;
+			}
+		}
+		return null;
+	}
 
 	public void separate(int value)
 	{
@@ -65,7 +65,7 @@ public class UI extends PApplet
 	public void setup() 
 	{
 		loadColours();
-		//printColours();	
+		printColours();	
 	}
 	
 	public void draw()
