@@ -14,4 +14,12 @@ public class Resistor
         this.tens = (value - (hundreds * 100)) / 10;
         this.ones = value - ((hundreds * 100)  + (tens * 10));
     }
+
+    public float border;
+    public float gap;
+
+    public void render()
+    {
+        
+    }
 }

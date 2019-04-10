@@ -10,7 +10,7 @@ public class UI extends PApplet
 
 {	
 	ArrayList<Colour> colours = new ArrayList<Colour>();
-	// ArrayList<Resistor> resistors = new ArrayList<Resistor>();
+	ArrayList<Resistor> resistors = new ArrayList<Resistor>();
 
 	// Load Data
 	public void loadColours()
