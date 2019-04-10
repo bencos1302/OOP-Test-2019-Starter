@@ -27,6 +27,6 @@ public class Resistor
 
     public void render()
     {
-
+        
     }
 }

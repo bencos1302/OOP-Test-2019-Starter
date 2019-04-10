@@ -67,19 +67,50 @@ public class UI extends PApplet
 	{
 		size(500, 800);
 		
-		separate(381);
-		separate(1);
-		separate(92);
+		// separate(381);
+		// separate(1);
+		// separate(92);
 	}
 
 	public void setup() 
 	{
 		loadColours();
-		printColours();	
+		loadResistors();	
 	}
+
+	public int border = 70;
+	public int gap = 10;
+	public int midX = 250;
+	public int midY = 400;
 	
 	public void draw()
 	{	
-			
+		rect(midX - border, 50, border * 2, border * 2);
+		line(midX - border, 120,  midX - (border + 70), 120);
+		line(midX + border, 120,  midX + (border + 70), 120);
+		rect((midX + gap) - 70, 50, 10, 140);
+		rect((midX + gap) - 40, 50, 10, 140);
+		rect((midX + gap) - 10, 50, 10, 140);
+
+		rect(midX - border, 240, border * 2, border * 2);
+		line(midX - border, 310,  midX - (border + 70), 310);
+		line(midX + border, 310,  midX + (border + 70), 310);
+		rect((midX + gap) - 70, 240, 10, 140);
+		rect((midX + gap) - 40, 240, 10, 140);
+		rect((midX + gap) - 10, 240, 10, 140);
+
+		rect(midX - border, 420, border * 2, border * 2);
+		line(midX - border, 490,  midX - (border + 70), 490);
+		line(midX + border, 490,  midX + (border + 70), 490);
+		rect((midX + gap) - 70, 420, 10, 140);
+		rect((midX + gap) - 40, 420, 10, 140);
+		rect((midX + gap) - 10, 420, 10, 140);
+		
+		rect(midX - border, 610, border * 2, border * 2);
+		line(midX - border, 680,  midX - (border + 70), 680);
+		line(midX + border, 680,  midX + (border + 70), 680);
+		rect((midX + gap) - 70, 610, 10, 140);
+		rect((midX + gap) - 40, 610, 10, 140);
+		rect((midX + gap) - 10, 610, 10, 140);
 	}
 }
