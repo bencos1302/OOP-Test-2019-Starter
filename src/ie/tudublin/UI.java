@@ -15,8 +15,8 @@ public class UI extends PApplet
 	// Load Data
 	public void loadColours()
 	{
-		Table table = loadTable("colours.csv", "header");
-		for(TableRow row : table.rows())
+		Table c = loadTable("colours.csv", "header");
+		for(TableRow row : c.rows())
 		{
 			Colour colour = new Colour(row);
 			colours.add(colour);
@@ -41,6 +41,16 @@ public class UI extends PApplet
 			}
 		}
 		return null;
+	}
+
+	public void loadResistors()
+	{
+		Table res = loadTable("resistors.csv");
+		for(TableRow row : res.rows())
+		{
+			Resistor resistor = new Resistor(row);
+			resistors.add(resistor);
+		}
 	}
 
 	public void separate(int value)
